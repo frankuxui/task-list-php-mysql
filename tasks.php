@@ -33,7 +33,7 @@ require 'db.php';
 
       <!-- Task Form -->
       <div class="p-6 rounded-xl bg-white h-fit">
-        <form action="add-task.php" method="POST" autocomplete="off" id="form_id">
+        <form action="app/add-task.php" method="POST" autocomplete="off" id="form_id">
 
           <?php if(isset($_GET['message']) && $_GET['message']== "error") { ?>
             
@@ -130,11 +130,7 @@ require 'db.php';
     </div><!-- Close Main Task -->
   </div><!-- Close Container -->
   
- <script type="text/javascript" src="js/script.js"></script>
- 
+  <script type="text/javascript" src="js/script.js"></script>
 
-
-  </script>
-  
 </body>
 </html>

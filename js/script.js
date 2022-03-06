@@ -48,7 +48,7 @@ function handleDelete(params){
     redirect: 'follow',
     body: data
   }
-  fetch("remove.php", requestOptions)
+  fetch("app/remove.php", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

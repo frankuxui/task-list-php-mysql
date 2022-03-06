@@ -1,13 +1,13 @@
 <?php
-$errorMessage="index.php?message=error=lee_esto";
-$successfullMessage="index.php?message=successful";
+$errorMessage="../tasks.php?message=error";
+$successfullMessage="../tasks.php?message=successful";
 
 //var_dump($_REQUEST);
 //exit();
 
 if(isset($_POST['id'])){
   
-  require 'db.php';
+  require '../db.php';
   
   $id = $_POST['id'];
   

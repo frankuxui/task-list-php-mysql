@@ -1,9 +1,11 @@
 <?php
-$errorMessage="tasks.php?message=error";
-$successfullMessage="tasks.php?message=successful";
+$errorMessage="../tasks.php?message=error";
+$successfullMessage="../tasks.php?message=successful";
 
 if (isset($_POST['title'])) {
-  require 'db.php';
+
+  require '../db.php';
+  
   $title= $_POST['title'];
   $note= $_POST['note'];
   
@@ -15,7 +17,7 @@ if (isset($_POST['title'])) {
     if($res){
       header("Location: $successfullMessage");
     }else{
-      header("Location: tasks.php");
+      header("Location: ../tasks.php");
     }
 
     $connection= null;
