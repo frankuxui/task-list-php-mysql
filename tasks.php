@@ -11,6 +11,11 @@ require 'db.php';
 
 ?>
 
+<?php
+
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['username'])){?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -134,3 +139,10 @@ require 'db.php';
 
 </body>
 </html>
+
+<?php }else{
+
+header("location: index.php");
+exit();
+
+}?>

@@ -12,5 +12,13 @@ try {
   echo "Conection failed: " . $error->getMessage(); 
 }
 
+// Data base users
+
+$connection_user = mysqli_connect($conexionName, $user, $password, $dataBaseName);
+
+if (!$connection_user) {
+  echo "Connection failed";
+}
 
 ?>
+
